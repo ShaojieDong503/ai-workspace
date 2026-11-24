@@ -1,0 +1,22 @@
+alembic==1.20.1+computecanada
+cloudpickle==3.1.2+computecanada
+colorlog==6.12.0+computecanada
+joblib==1.6.0+computecanada
+lightgbm==4.5.0+computecanada
+mako==1.4.3+computecanada
+markupsafe==3.0.3+computecanada
+numpy==2.4.2+computecanada
+optuna==4.9.0+computecanada
+packaging==26.3+computecanada
+pandas==3.0.5+computecanada
+pyarrow @ file:///tmp/ebuser/avx512/Arrow/23.0.1/GCCcore-14.3-gentoo/arrow/python
+python_dateutil==4.0.0+computecanada
+pyyaml==6.0.3+computecanada
+scikit_learn==1.8.0+computecanada
+scipy==1.17.1+computecanada
+sqlalchemy==2.1.6+computecanada
+threadpoolctl==3.7.0+computecanada
+tqdm==4.70.1+computecanada
+typing_extensions==4.16.0+computecanada
+tzdata==2026.6+computecanada
+xgboost==3.2.0+computecanada

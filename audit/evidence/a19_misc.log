@@ -1,0 +1,4 @@
+NAPS station->cell: {'both': 111, 'left_only': 0, 'right_only': 0}  cell mismatches: 0
+NAPS stations with >1 coordinate pair: 37
+domain list by prov: {'ON': 59, 'QC': 55, 'MB': 3}
+in domain list but not in stations.parquet: [['050311', 'Quebec', 'QC', 46.77417, -71.36972], ['050313', 'Quebec', 'QC', 46.78132, -71.30872], ['050314', 'Quebec', 'QC', 46.86147, -71.25719], ['050310', 'Quebec', 'QC', 46.79487, -71.24639], ['050308', 'Quebec', 'QC', 46.82118, -71.22049], ['055702', 'Levis', 'QC', 46.80603, -71.16751]]

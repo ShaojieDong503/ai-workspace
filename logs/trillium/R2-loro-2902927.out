@@ -1,0 +1,45 @@
+start 2026-11-22T18:19:33-05:00  host tri0605  job 2902927  name R2-loro
+cmd: python code/model/runs.py R2 --scheme loro
+OMP_NUM_THREADS=32  cpus=192
+R2 loro done -> /scratch/dongsha3/pm25/data/interim/model/full/R2/loro
+end 2026-11-22T18:19:55-05:00
+
+scontrol show job 2902927
+JobId=2902927 JobName=R2-loro
+   UserId=dongsha3(3151850) GroupId=dongsha3(3151850) MCS_label=N/A
+   Priority=622887 Nice=0 Account=def-kuan QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:30 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2026-11-21T16:45:52 EligibleTime=2026-11-22T17:58:51
+   AccrueTime=2026-11-22T17:58:51
+   StartTime=2026-11-22T18:19:25 EndTime=2026-11-22T18:19:55 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-22T18:19:25 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=tri-login01:3656393
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri0605
+   BatchHost=tri0605
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/dongsha3/pm25/code/model/slurm/pm25_job.sh
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=R2-loro --time=03:00:00 --dependency=afterok:2902918 --export=ALL,OMP_NUM_THREADS=32 code/model/slurm/pm25_job.sh python code/model/runs.py R2 --scheme loro --export=NONE --get-user-env --parsable --job-name=R2-loro --time=03:00:00 --dependency=afterok:2902918 --export=ALL,OMP_NUM_THREADS=32 code/model/slurm/pm25_job.sh python code/model/runs.py R2 --scheme loro
+   WorkDir=/scratch/dongsha3/pm25
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=R2-loro --time=03:00:00 --dependency=afterok:2902918 --export=ALL,OMP_NUM_THREADS=32 code/model/slurm/pm25_job.sh python code/model/runs.py R2 --scheme loro
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/dongsha3/pm25/logs/R2-loro-2902927.out
+   TresPerTask=cpu=192
+   MailUser=shaojie.dong@mail.utoronto.ca MailType=FAIL
+
+sacct -j 2902927
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2902927         R2-loro   def-kuan   00:00:30                         00:00:00   00:00:00      0:0 
+2902927.bat+      batch   def-kuan   00:00:30                         00:00:00   00:00:00      0:0 
+2902927.ext+     extern   def-kuan   00:00:30                         00:00:00   00:00:00      0:0 
+

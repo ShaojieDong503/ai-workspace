@@ -1,0 +1,15 @@
+MAIAC:
+                   size  sum
+col                        
+aod047              75   75
+aod055              75   75
+aod055_npix         75   75
+maiac_npix_total    75   75
+smoke_aod055        75   75
+smoke_mask_frac     75   75
+Empty DataFrame
+Columns: [ym, cell_id, date, col, ref, got, ok]
+Index: []
+2012_08 training rows 3983 joined 3983 columns compared 69 differing: []
+2019_02 training rows 6309 joined 6309 columns compared 69 differing: []
+2024_12 training rows 8741 joined 8741 columns compared 69 differing: []

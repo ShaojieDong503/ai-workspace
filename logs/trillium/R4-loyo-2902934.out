@@ -1,0 +1,45 @@
+start 2026-11-22T17:44:51-05:00  host tri1103  job 2902934  name R4-loyo
+cmd: python code/model/runs.py R4 --scheme loyo
+OMP_NUM_THREADS=13  cpus=192
+R4 loyo done -> /scratch/dongsha3/pm25/data/interim/model/full/R4/loyo
+end 2026-11-22T17:45:31-05:00
+
+scontrol show job 2902934
+JobId=2902934 JobName=R4-loyo
+   UserId=dongsha3(3151850) GroupId=dongsha3(3151850) MCS_label=N/A
+   Priority=624048 Nice=0 Account=def-kuan QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:46 TimeLimit=02:00:00 TimeMin=N/A
+   SubmitTime=2026-11-21T16:45:53 EligibleTime=2026-11-22T01:47:21
+   AccrueTime=2026-11-22T01:47:21
+   StartTime=2026-11-22T17:44:45 EndTime=2026-11-22T17:45:31 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-22T17:44:45 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=tri-login01:3656393
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri1103
+   BatchHost=tri1103
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/dongsha3/pm25/code/model/slurm/pm25_job.sh
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=R4-loyo --time=03:00:00 --dependency=afterok:2902921 --export=ALL,OMP_NUM_THREADS=13 code/model/slurm/pm25_job.sh python code/model/runs.py R4 --scheme loyo --export=NONE --get-user-env --parsable --job-name=R4-loyo --time=03:00:00 --dependency=afterok:2902921 --export=ALL,OMP_NUM_THREADS=13 code/model/slurm/pm25_job.sh python code/model/runs.py R4 --scheme loyo
+   WorkDir=/scratch/dongsha3/pm25
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=R4-loyo --time=03:00:00 --dependency=afterok:2902921 --export=ALL,OMP_NUM_THREADS=13 code/model/slurm/pm25_job.sh python code/model/runs.py R4 --scheme loyo
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/dongsha3/pm25/logs/R4-loyo-2902934.out
+   TresPerTask=cpu=192
+   MailUser=shaojie.dong@mail.utoronto.ca MailType=FAIL
+
+sacct -j 2902934
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2902934         R4-loyo   def-kuan   00:00:46                         00:00:00   00:00:00      0:0 
+2902934.bat+      batch   def-kuan   00:00:46                         00:00:00   00:00:00      0:0 
+2902934.ext+     extern   def-kuan   00:00:46                         00:00:00   00:00:00      0:0 
+

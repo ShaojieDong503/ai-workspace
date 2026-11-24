@@ -1,0 +1,198 @@
+{
+  "dataset": "A",
+  "all_columns": [
+    "aod055",
+    "aod047",
+    "aod_missing",
+    "aod_nbr_25km_d0",
+    "aod_nbr_25km_d0_n",
+    "aod_nbr_50km_d0",
+    "aod_nbr_50km_d0_n",
+    "aod_nbr_100km_d0",
+    "aod_nbr_100km_d0_n",
+    "aod_nbr_50km_d1_3",
+    "aod_nbr_50km_d1_3_n",
+    "aod_last_obs",
+    "aod_last_obs_age_d",
+    "injection_height",
+    "smoke_aod055",
+    "smoke_mask_frac",
+    "merra_bccmass",
+    "merra_occmass",
+    "merra_so4cmass",
+    "merra_sscmass25",
+    "merra_ducmass25",
+    "merra_bcsmass",
+    "merra_ocsmass",
+    "merra_so4smass",
+    "merra_sssmass25",
+    "merra_dusmass25",
+    "merra_bcexttau",
+    "merra_ocexttau",
+    "merra_suexttau",
+    "merra_duexttau",
+    "merra_totexttau",
+    "merra_pblh",
+    "merra_qlml",
+    "merra_tlml",
+    "merra_ulml",
+    "merra_vlml",
+    "merra_speed",
+    "merra_speedmax",
+    "merra_u10m",
+    "merra_v10m",
+    "merra_u50m",
+    "merra_v50m",
+    "merra_u250",
+    "merra_v250",
+    "merra_u500",
+    "merra_v500",
+    "merra_u850",
+    "merra_v850",
+    "fire_dist_nearest_km",
+    "fire_count_25km",
+    "fire_count_50km",
+    "fire_count_100km",
+    "fire_count_250km",
+    "fire_count_500km",
+    "fire_frp_sum_25km",
+    "fire_frp_sum_50km",
+    "fire_frp_sum_100km",
+    "fire_frp_sum_250km",
+    "fire_frp_sum_500km",
+    "hms_any",
+    "hms_n_polygons",
+    "hms_density_max"
+  ],
+  "dropped_constant": [],
+  "correlation_groups": [
+    [
+      "aod055",
+      "aod047"
+    ],
+    [
+      "aod_nbr_25km_d0",
+      "aod_nbr_50km_d0"
+    ],
+    [
+      "aod_nbr_25km_d0_n",
+      "aod_nbr_50km_d0_n"
+    ],
+    [
+      "merra_bccmass",
+      "merra_bcexttau"
+    ],
+    [
+      "merra_ducmass25",
+      "merra_duexttau"
+    ],
+    [
+      "merra_qlml",
+      "merra_tlml"
+    ],
+    [
+      "merra_ulml",
+      "merra_u10m",
+      "merra_u50m"
+    ],
+    [
+      "merra_vlml",
+      "merra_v10m",
+      "merra_v50m"
+    ],
+    [
+      "merra_speed",
+      "merra_speedmax"
+    ],
+    [
+      "fire_count_25km",
+      "fire_frp_sum_25km"
+    ],
+    [
+      "fire_count_50km",
+      "fire_frp_sum_50km"
+    ],
+    [
+      "fire_count_100km",
+      "fire_frp_sum_100km"
+    ],
+    [
+      "fire_count_250km",
+      "fire_frp_sum_250km"
+    ],
+    [
+      "fire_count_500km",
+      "fire_frp_sum_500km"
+    ],
+    [
+      "hms_any",
+      "hms_n_polygons"
+    ]
+  ],
+  "ranked_within_group": {
+    "aod055, aod047": [
+      "aod055",
+      "aod047"
+    ],
+    "aod_nbr_25km_d0, aod_nbr_50km_d0": [
+      "aod_nbr_50km_d0",
+      "aod_nbr_25km_d0"
+    ],
+    "aod_nbr_25km_d0_n, aod_nbr_50km_d0_n": [
+      "aod_nbr_50km_d0_n",
+      "aod_nbr_25km_d0_n"
+    ],
+    "merra_bccmass, merra_bcexttau": [
+      "merra_bcexttau",
+      "merra_bccmass"
+    ],
+    "merra_ducmass25, merra_duexttau": [
+      "merra_ducmass25",
+      "merra_duexttau"
+    ],
+    "merra_qlml, merra_tlml": [
+      "merra_tlml",
+      "merra_qlml"
+    ],
+    "merra_ulml, merra_u10m, merra_u50m": [
+      "merra_ulml",
+      "merra_u10m",
+      "merra_u50m"
+    ],
+    "merra_vlml, merra_v10m, merra_v50m": [
+      "merra_v10m",
+      "merra_vlml",
+      "merra_v50m"
+    ],
+    "merra_speed, merra_speedmax": [
+      "merra_speed",
+      "merra_speedmax"
+    ],
+    "fire_count_25km, fire_frp_sum_25km": [
+      "fire_count_25km",
+      "fire_frp_sum_25km"
+    ],
+    "fire_count_50km, fire_frp_sum_50km": [
+      "fire_count_50km",
+      "fire_frp_sum_50km"
+    ],
+    "fire_count_100km, fire_frp_sum_100km": [
+      "fire_frp_sum_100km",
+      "fire_count_100km"
+    ],
+    "fire_count_250km, fire_frp_sum_250km": [
+      "fire_frp_sum_250km",
+      "fire_count_250km"
+    ],
+    "fire_count_500km, fire_frp_sum_500km": [
+      "fire_count_500km",
+      "fire_frp_sum_500km"
+    ],
+    "hms_any, hms_n_polygons": [
+      "hms_n_polygons",
+      "hms_any"
+    ]
+  },
+  "representatives": {},
+  "note": "representatives left blank on purpose: rank by meaning, completeness and gain, then save as features_frozen.json"
+}

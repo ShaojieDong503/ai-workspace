@@ -1,0 +1,70 @@
+start 2026-11-22T01:03:18-05:00  host tri0257  job 2902919  name tune-xgb-25
+cmd: python code/model/tune.py --model xgb --trials 25
+OMP_NUM_THREADS=19  cpus=192
+[I 2026-11-22 01:03:23,240] A new study created in RDB with name: xgb_A_full_662aa69046930e8d_6d5517e185fa06a5
+[I 2026-11-22 01:03:40,975] Trial 0 finished with value: 2.8988624080359897 and parameters: {'learning_rate': 0.20660101250560609, 'max_depth': 4, 'min_child_weight': 64.68812824960608, 'subsample': 0.5127051782627363, 'colsample_bytree': 0.7117578890145391, 'reg_lambda': 8.007550003259347, 'reg_alpha': 2.499229112548246, 'gamma': 0.7022688186793995}. Best is trial 0 with value: 2.8988624080359897.
+[I 2026-11-22 01:03:53,166] Trial 1 finished with value: 2.8512272137352546 and parameters: {'learning_rate': 0.2957681948963256, 'max_depth': 5, 'min_child_weight': 81.33563816865933, 'subsample': 0.6728459021379787, 'colsample_bytree': 0.6109096392902061, 'reg_lambda': 3.3763558361147195, 'reg_alpha': 0.9781313396369262, 'gamma': 0.08975385861576257}. Best is trial 1 with value: 2.8512272137352546.
+[I 2026-11-22 01:04:48,497] Trial 2 finished with value: 2.5912253941672594 and parameters: {'learning_rate': 0.07589344164870895, 'max_depth': 11, 'min_child_weight': 64.48105046339427, 'subsample': 0.6890313277810182, 'colsample_bytree': 0.8634223993164793, 'reg_lambda': 2.3605057459370773, 'reg_alpha': 8.634397990417465, 'gamma': 0.46702807467369134}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:05:01,756] Trial 3 finished with value: 2.7035944430915713 and parameters: {'learning_rate': 0.2794958615880775, 'max_depth': 11, 'min_child_weight': 11.979426399189503, 'subsample': 0.6610951136261506, 'colsample_bytree': 0.7682254421121666, 'reg_lambda': 8.845594313163812, 'reg_alpha': 0.455939967139285, 'gamma': 0.959470114425681}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:05:11,798] Trial 4 finished with value: 2.597420227018714 and parameters: {'learning_rate': 0.12616690051310936, 'max_depth': 12, 'min_child_weight': 4.126671126620917, 'subsample': 0.9883960835453978, 'colsample_bytree': 0.5840137308755664, 'reg_lambda': 2.7643608535683106, 'reg_alpha': 5.9432801689091885, 'gamma': 0.6562336817709387}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:05:33,648] Trial 5 finished with value: 2.6392901901788517 and parameters: {'learning_rate': 0.1766668224759319, 'max_depth': 10, 'min_child_weight': 12.540588833498902, 'subsample': 0.771312890853652, 'colsample_bytree': 0.456664526502251, 'reg_lambda': 2.3904158398799105, 'reg_alpha': 4.764807271921718, 'gamma': 0.25669878613209496}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:05:57,246] Trial 6 finished with value: 2.675585897264128 and parameters: {'learning_rate': 0.1780189924490332, 'max_depth': 4, 'min_child_weight': 79.55704416845674, 'subsample': 0.9616822160921048, 'colsample_bytree': 0.41876605675798817, 'reg_lambda': 4.268206169232647, 'reg_alpha': 7.624829808215985, 'gamma': 0.16016823852280915}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:06:20,315] Trial 7 finished with value: 2.633376029321216 and parameters: {'learning_rate': 0.1780684151786432, 'max_depth': 5, 'min_child_weight': 29.443292330503436, 'subsample': 0.9576022013680552, 'colsample_bytree': 0.86956601087102, 'reg_lambda': 6.072427440754552, 'reg_alpha': 8.847837590901662, 'gamma': 0.3867246638628784}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:06:42,696] Trial 8 finished with value: 2.668056763491969 and parameters: {'learning_rate': 0.1638669767609831, 'max_depth': 8, 'min_child_weight': 95.03438630444994, 'subsample': 0.8106634080091119, 'colsample_bytree': 0.9454374945272279, 'reg_lambda': 5.708430645873771, 'reg_alpha': 1.1075391293771353, 'gamma': 0.6366099034736497}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:06:57,383] Trial 9 finished with value: 2.8128509276460223 and parameters: {'learning_rate': 0.29776950782632733, 'max_depth': 3, 'min_child_weight': 7.594099237181197, 'subsample': 0.6479135713118753, 'colsample_bytree': 0.9387205823625271, 'reg_lambda': 7.713953621068784, 'reg_alpha': 7.819722702408004, 'gamma': 0.8844765325119787}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:07:26,478] Trial 10 finished with value: 2.6773681044031234 and parameters: {'learning_rate': 0.06338145164790868, 'max_depth': 7, 'min_child_weight': 46.42619092986202, 'subsample': 0.5197584750938045, 'colsample_bytree': 0.8003895603491125, 'reg_lambda': 1.3692671823341644, 'reg_alpha': 4.648990329874389, 'gamma': 0.39994909930564093}. Best is trial 2 with value: 2.5912253941672594.
+[I 2026-11-22 01:08:06,600] Trial 11 finished with value: 2.5802492498668235 and parameters: {'learning_rate': 0.08741203588201772, 'max_depth': 12, 'min_child_weight': 45.21948815540534, 'subsample': 0.8594995615665354, 'colsample_bytree': 0.5354228655652058, 'reg_lambda': 0.7481771087056099, 'reg_alpha': 5.9970332340637675, 'gamma': 0.5932959282507893}. Best is trial 11 with value: 2.5802492498668235.
+[I 2026-11-22 01:08:52,940] Trial 12 finished with value: 2.56486394110873 and parameters: {'learning_rate': 0.07621089260888972, 'max_depth': 10, 'min_child_weight': 52.53737238549366, 'subsample': 0.8518450461287089, 'colsample_bytree': 0.5726929822757542, 'reg_lambda': 0.23120758165939925, 'reg_alpha': 9.821958894352173, 'gamma': 0.5028634700574909}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:09:25,695] Trial 13 finished with value: 2.595541130167244 and parameters: {'learning_rate': 0.0942774483783461, 'max_depth': 9, 'min_child_weight': 43.52415928375674, 'subsample': 0.836547524576509, 'colsample_bytree': 0.5529692027063039, 'reg_lambda': 0.02148330907736687, 'reg_alpha': 6.361689315567354, 'gamma': 0.5183740529079113}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:09:56,670] Trial 14 finished with value: 2.5998012581962855 and parameters: {'learning_rate': 0.0993656144659051, 'max_depth': 12, 'min_child_weight': 40.84666378425819, 'subsample': 0.8850146051616149, 'colsample_bytree': 0.5017166412955026, 'reg_lambda': 0.33882073194401985, 'reg_alpha': 3.3693317889221377, 'gamma': 0.7839751157508843}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:10:35,775] Trial 15 finished with value: 2.5798043354863958 and parameters: {'learning_rate': 0.08675217367134841, 'max_depth': 10, 'min_child_weight': 56.83623199265678, 'subsample': 0.8934766406062133, 'colsample_bytree': 0.6348511409018007, 'reg_lambda': 1.4491735327891344, 'reg_alpha': 9.724112082099449, 'gamma': 0.29118213600958853}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:11:07,250] Trial 16 finished with value: 2.590425654760458 and parameters: {'learning_rate': 0.12209832431163778, 'max_depth': 8, 'min_child_weight': 60.52902872658814, 'subsample': 0.9061631372265585, 'colsample_bytree': 0.6570390665747318, 'reg_lambda': 1.5936087180334306, 'reg_alpha': 9.9529308269173, 'gamma': 0.2744182683804897}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:12:12,265] Trial 17 finished with value: 2.5712729340817533 and parameters: {'learning_rate': 0.0616259583297304, 'max_depth': 10, 'min_child_weight': 26.421466397210118, 'subsample': 0.7642804801592137, 'colsample_bytree': 0.6675633392487288, 'reg_lambda': 4.218388734985279, 'reg_alpha': 9.99012500126253, 'gamma': 0.297105743824548}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:12:59,377] Trial 18 finished with value: 2.573397612383014 and parameters: {'learning_rate': 0.060366218998397045, 'max_depth': 7, 'min_child_weight': 25.31551125208345, 'subsample': 0.7426877767619863, 'colsample_bytree': 0.715001230767321, 'reg_lambda': 4.759496228388729, 'reg_alpha': 8.59188717710381, 'gamma': 0.047173851222420904}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:13:59,672] Trial 19 finished with value: 2.5678366081299786 and parameters: {'learning_rate': 0.0718223533433521, 'max_depth': 9, 'min_child_weight': 23.987633849026242, 'subsample': 0.7561165297741416, 'colsample_bytree': 0.6946914165342906, 'reg_lambda': 6.575091848466837, 'reg_alpha': 7.28142044593133, 'gamma': 0.5134011172501871}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:14:38,329] Trial 20 finished with value: 2.5802074555776566 and parameters: {'learning_rate': 0.07259102427963286, 'max_depth': 8, 'min_child_weight': 34.59785143141343, 'subsample': 0.6085583814781732, 'colsample_bytree': 0.7549895698927455, 'reg_lambda': 9.740177567763602, 'reg_alpha': 7.061537437598613, 'gamma': 0.547570037677312}. Best is trial 12 with value: 2.56486394110873.
+[I 2026-11-22 01:15:28,987] Trial 21 finished with value: 2.5634969974350996 and parameters: {'learning_rate': 0.07246789145170612, 'max_depth': 10, 'min_child_weight': 20.58164532902052, 'subsample': 0.7580093384294887, 'colsample_bytree': 0.6841696911868571, 'reg_lambda': 6.038637731321758, 'reg_alpha': 9.388616360792852, 'gamma': 0.4158262680509464}. Best is trial 21 with value: 2.5634969974350996.
+[I 2026-11-22 01:16:20,297] Trial 22 finished with value: 2.5598660981995986 and parameters: {'learning_rate': 0.07437923514230908, 'max_depth': 9, 'min_child_weight': 18.639067963481082, 'subsample': 0.7201253859811794, 'colsample_bytree': 0.7018260850059945, 'reg_lambda': 6.569843743493853, 'reg_alpha': 8.814055814928963, 'gamma': 0.43019868267933287}. Best is trial 22 with value: 2.5598660981995986.
+[I 2026-11-22 01:16:55,035] Trial 23 finished with value: 2.583946537622089 and parameters: {'learning_rate': 0.11277336456863271, 'max_depth': 9, 'min_child_weight': 16.36399041671084, 'subsample': 0.7161717751887128, 'colsample_bytree': 0.6009636132852004, 'reg_lambda': 6.835270169276004, 'reg_alpha': 9.052647647083198, 'gamma': 0.41389325838394014}. Best is trial 22 with value: 2.5598660981995986.
+[I 2026-11-22 01:17:44,629] Trial 24 finished with value: 2.5833126703583718 and parameters: {'learning_rate': 0.07983323743239219, 'max_depth': 11, 'min_child_weight': 19.40790151093318, 'subsample': 0.8062714405321466, 'colsample_bytree': 0.821890789608442, 'reg_lambda': 5.363879633576636, 'reg_alpha': 8.224279677677544, 'gamma': 0.18235879796547572}. Best is trial 22 with value: 2.5598660981995986.
+xgb: chosen 2.6756  best 2.5599  trees 4985  folds x10, trials x1, 19 threads/fit -> /scratch/dongsha3/pm25/data/interim/model/params_xgb.json
+end 2026-11-22T01:17:45-05:00
+
+scontrol show job 2902919
+JobId=2902919 JobName=tune-xgb-25
+   UserId=dongsha3(3151850) GroupId=dongsha3(3151850) MCS_label=N/A
+   Priority=608888 Nice=0 Account=def-kuan QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:14:33 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2026-11-21T16:45:51 EligibleTime=2026-11-22T01:01:21
+   AccrueTime=2026-11-22T01:01:21
+   StartTime=2026-11-22T01:03:12 EndTime=2026-11-22T01:17:45 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-22T01:03:12 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=tri-login01:3656393
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri0257
+   BatchHost=tri0257
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/dongsha3/pm25/code/model/slurm/pm25_job.sh
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=tune-xgb-25 --time=06:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model xgb --trials 25 --export=NONE --get-user-env --parsable --job-name=tune-xgb-25 --time=06:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model xgb --trials 25
+   WorkDir=/scratch/dongsha3/pm25
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=tune-xgb-25 --time=06:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model xgb --trials 25
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/dongsha3/pm25/logs/tune-xgb-25-2902919.out
+   TresPerTask=cpu=192
+
+sacct -j 2902919
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2902919      tune-xgb-+   def-kuan   00:14:33                         00:00:00   00:00:00      0:0 
+2902919.bat+      batch   def-kuan   00:14:33                         00:00:00   00:00:00      0:0 
+2902919.ext+     extern   def-kuan   00:14:33                         00:00:00   00:00:00      0:0 
+

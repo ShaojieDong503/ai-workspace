@@ -1,0 +1,31 @@
+site universe: {'both': 277, 'right_only': 111, 'left_only': 0}  cell mismatches: 111  sites spanning >1 cell: 0
+{'both': 667759, 'left_only': 0, 'right_only': 0}
+value mismatches: 1053  by calendar day: {'12-31': 1053}  by site UTC offset: {-5: 1053}
+n_valid_hours mismatch (ref n_min vs pipeline): 1054
+  of which on 12-31: 1054
+          station_uid        day     pm25_x     pm25_y  n_min  n_valid_hours
+127   AQS:24-005-1007 2020-12-31   8.727273   6.380952     22             21
+880   AQS:42-101-0004 2023-12-31  15.041667  13.065217     24             23
+919   AQS:42-101-0075 2021-12-31  18.206250  16.454348     24             23
+1043  AQS:50-021-0002 2017-12-31  15.662500  13.919565     24             23
+911   AQS:42-101-0057 2021-12-31  15.733333  14.021739     24             23
+214   AQS:24-510-0040 2018-12-31  11.583333  10.000000     24             23
+750   AQS:42-045-0109 2023-12-31  12.379167  10.804348     24             23
+339   AQS:34-007-1007 2023-12-31   9.187500   7.782609     24             23
+n_poc mismatches: 0
+rows only on one side:
+ Empty DataFrame
+Columns: [station_uid, day, date, pm25_x, pm25_y, n_min, _merge]
+Index: []
+AQS station-days with >=1 negative hour: 90176 of 667759 ; daily mean still >=0: 87544
+AQS days lost if negative hours were missing: 11130
+shift when negative hours missing: mean 0.0706  p99 1.241  max 9.982  days changed >0.5: 34462
+AQS station-days containing qualifier-flagged hours: 36466
+multi-POC site-days: 183903  max-min > 10: 141  > 25: 1
+                        size         min         max     spread
+site        day                                                
+27-123-0871 2018-10-21     2   13.416667   39.416667  26.000000
+17-113-2003 2023-06-28     4  192.133333  214.095833  21.962500
+42-129-0008 2016-07-25     2   -1.083333   17.908333  18.991667
+            2016-07-22     2    1.583333   20.533333  18.950000
+42-101-0048 2023-06-07     4  198.704348  217.220833  18.516486

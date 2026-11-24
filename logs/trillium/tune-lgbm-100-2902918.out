@@ -1,0 +1,71 @@
+start 2026-11-22T17:44:52-05:00  host tri1104  job 2902918  name tune-lgbm-100
+cmd: python code/model/tune.py --model lgbm --trials 100
+OMP_NUM_THREADS=19  cpus=192
+[I 2026-11-22 17:44:57,555] Using an existing study with name 'lgbm_A_full_662aa69046930e8d_6d5517e185fa06a5' instead of creating a new one.
+[I 2026-11-22 17:45:24,123] Trial 76 finished with value: 2.640363255102065 and parameters: {'learning_rate': 0.10907856993877565, 'num_leaves': 21, 'max_depth': 8, 'min_data_in_leaf': 41, 'feature_fraction': 0.5435978817499697, 'bagging_fraction': 0.696179355981865, 'lambda_l1': 8.902146884815282, 'lambda_l2': 7.755661473851023, 'min_gain_to_split': 0.647956306520718}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:45:54,631] Trial 77 finished with value: 2.6085981582023807 and parameters: {'learning_rate': 0.07515769471331177, 'num_leaves': 61, 'max_depth': 10, 'min_data_in_leaf': 63, 'feature_fraction': 0.6489629965604901, 'bagging_fraction': 0.6294428358399451, 'lambda_l1': 7.634468515790326, 'lambda_l2': 6.250330894197733, 'min_gain_to_split': 0.5979324549905674}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:46:39,160] Trial 78 finished with value: 2.599788372214027 and parameters: {'learning_rate': 0.08402163331994719, 'num_leaves': 74, 'max_depth': 5, 'min_data_in_leaf': 23, 'feature_fraction': 0.6037128441927794, 'bagging_fraction': 0.7222509377718269, 'lambda_l1': 9.284638020994171, 'lambda_l2': 9.181141538071362, 'min_gain_to_split': 0.8380079298543665}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:47:08,372] Trial 79 finished with value: 2.7669959333330505 and parameters: {'learning_rate': 0.10444362198722529, 'num_leaves': 53, 'max_depth': 6, 'min_data_in_leaf': 100, 'feature_fraction': 0.7777221928690728, 'bagging_fraction': 0.5962101801302333, 'lambda_l1': 1.7657436972284355, 'lambda_l2': 4.523172519484742, 'min_gain_to_split': 0.9327513482387891}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:47:51,880] Trial 80 finished with value: 2.624186183277139 and parameters: {'learning_rate': 0.06723270623787689, 'num_leaves': 33, 'max_depth': 16, 'min_data_in_leaf': 72, 'feature_fraction': 0.7025437160372706, 'bagging_fraction': 0.6458698098065, 'lambda_l1': 7.168298271853719, 'lambda_l2': 5.757329139267338, 'min_gain_to_split': 0.7368712542613787}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:48:36,820] Trial 81 finished with value: 2.5715043937310225 and parameters: {'learning_rate': 0.11738137243262795, 'num_leaves': 42, 'max_depth': 15, 'min_data_in_leaf': 10, 'feature_fraction': 0.559042978087781, 'bagging_fraction': 0.7442840003844333, 'lambda_l1': 9.997052974944129, 'lambda_l2': 5.172870179056318, 'min_gain_to_split': 0.8575464548405486}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:49:00,153] Trial 82 finished with value: 2.577000337710974 and parameters: {'learning_rate': 0.11797715848234873, 'num_leaves': 41, 'max_depth': 15, 'min_data_in_leaf': 11, 'feature_fraction': 0.5726922776917676, 'bagging_fraction': 0.7407877789204254, 'lambda_l1': 9.904693728401268, 'lambda_l2': 5.503756832247387, 'min_gain_to_split': 0.857220763547624}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:49:38,661] Trial 83 finished with value: 2.5641789658568754 and parameters: {'learning_rate': 0.1298405722919139, 'num_leaves': 43, 'max_depth': 15, 'min_data_in_leaf': 10, 'feature_fraction': 0.5596508246989148, 'bagging_fraction': 0.7740970465574337, 'lambda_l1': 9.98282408810617, 'lambda_l2': 6.019335532287784, 'min_gain_to_split': 0.849350639108897}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:50:13,105] Trial 84 finished with value: 2.5716142262647352 and parameters: {'learning_rate': 0.13264831184064974, 'num_leaves': 40, 'max_depth': 15, 'min_data_in_leaf': 10, 'feature_fraction': 0.522784326510502, 'bagging_fraction': 0.7749243139196245, 'lambda_l1': 9.754326100246862, 'lambda_l2': 6.018919085254442, 'min_gain_to_split': 0.7921848665062128}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:50:45,063] Trial 85 finished with value: 2.582965274470958 and parameters: {'learning_rate': 0.1312660019863568, 'num_leaves': 23, 'max_depth': 14, 'min_data_in_leaf': 24, 'feature_fraction': 0.4721292060910859, 'bagging_fraction': 0.8245507730370283, 'lambda_l1': 9.667225359761712, 'lambda_l2': 6.7154484320640275, 'min_gain_to_split': 0.7868387498396898}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:51:11,912] Trial 86 finished with value: 2.5864474480018176 and parameters: {'learning_rate': 0.1387346319011174, 'num_leaves': 14, 'max_depth': 14, 'min_data_in_leaf': 11, 'feature_fraction': 0.4098544655148381, 'bagging_fraction': 0.7864804734107594, 'lambda_l1': 9.686381551540583, 'lambda_l2': 6.080087646824907, 'min_gain_to_split': 0.8238719306828479}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:51:48,999] Trial 87 finished with value: 2.5903476467810767 and parameters: {'learning_rate': 0.1280045031899731, 'num_leaves': 41, 'max_depth': 12, 'min_data_in_leaf': 35, 'feature_fraction': 0.5544058290910089, 'bagging_fraction': 0.7890946723519736, 'lambda_l1': 9.337927804543884, 'lambda_l2': 7.195438872951829, 'min_gain_to_split': 0.7546923655557711}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:52:21,722] Trial 88 finished with value: 2.6079730561843784 and parameters: {'learning_rate': 0.1444017173275997, 'num_leaves': 46, 'max_depth': 15, 'min_data_in_leaf': 58, 'feature_fraction': 0.4754511948869997, 'bagging_fraction': 0.8085456700968081, 'lambda_l1': 8.93168457165956, 'lambda_l2': 4.77572691965712, 'min_gain_to_split': 0.8061044188444548}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:52:54,841] Trial 89 finished with value: 2.660693862405096 and parameters: {'learning_rate': 0.11813644253711, 'num_leaves': 28, 'max_depth': 4, 'min_data_in_leaf': 23, 'feature_fraction': 0.5217411970964861, 'bagging_fraction': 0.77830560166536, 'lambda_l1': 9.958465111943212, 'lambda_l2': 7.793460091550919, 'min_gain_to_split': 0.7027409074029586}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:53:21,388] Trial 90 finished with value: 2.609525189915603 and parameters: {'learning_rate': 0.15411060728486456, 'num_leaves': 56, 'max_depth': 7, 'min_data_in_leaf': 41, 'feature_fraction': 0.522272927229708, 'bagging_fraction': 0.8354800536465858, 'lambda_l1': 9.44028395150166, 'lambda_l2': 5.879833311005823, 'min_gain_to_split': 0.9160111717132046}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:53:53,712] Trial 91 finished with value: 2.608459090649766 and parameters: {'learning_rate': 0.19240347033921598, 'num_leaves': 36, 'max_depth': 13, 'min_data_in_leaf': 21, 'feature_fraction': 0.5776479542360078, 'bagging_fraction': 0.8531489916321329, 'lambda_l1': 9.077712040461211, 'lambda_l2': 8.753996049061353, 'min_gain_to_split': 0.7832458340141658}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:54:31,026] Trial 92 finished with value: 2.5837340050703395 and parameters: {'learning_rate': 0.11719913817951941, 'num_leaves': 43, 'max_depth': 15, 'min_data_in_leaf': 11, 'feature_fraction': 0.559454544213992, 'bagging_fraction': 0.752446829329616, 'lambda_l1': 9.999342282249508, 'lambda_l2': 5.686067554200944, 'min_gain_to_split': 0.846894015857742}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:54:55,932] Trial 93 finished with value: 2.5721575858229193 and parameters: {'learning_rate': 0.12086060083123633, 'num_leaves': 52, 'max_depth': 15, 'min_data_in_leaf': 10, 'feature_fraction': 0.5931832348069068, 'bagging_fraction': 0.7700079331565913, 'lambda_l1': 9.740833822343435, 'lambda_l2': 5.57155124432956, 'min_gain_to_split': 0.8684700945579924}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:55:37,736] Trial 94 finished with value: 2.6069721713736294 and parameters: {'learning_rate': 0.12182750581887442, 'num_leaves': 65, 'max_depth': 9, 'min_data_in_leaf': 30, 'feature_fraction': 0.597064906080445, 'bagging_fraction': 0.771059423131405, 'lambda_l1': 9.672712892362727, 'lambda_l2': 6.615109875147159, 'min_gain_to_split': 0.8901896507848132}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:56:01,593] Trial 95 finished with value: 2.5742501486641123 and parameters: {'learning_rate': 0.13263727233554776, 'num_leaves': 49, 'max_depth': 15, 'min_data_in_leaf': 10, 'feature_fraction': 0.6088184826010464, 'bagging_fraction': 0.7434466218474491, 'lambda_l1': 9.43024310538174, 'lambda_l2': 6.156496596289141, 'min_gain_to_split': 0.9497685834357006}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:56:38,053] Trial 96 finished with value: 2.5866020236698684 and parameters: {'learning_rate': 0.11137379267629827, 'num_leaves': 59, 'max_depth': 16, 'min_data_in_leaf': 45, 'feature_fraction': 0.5349478970529036, 'bagging_fraction': 0.8027746874690103, 'lambda_l1': 9.754453736400405, 'lambda_l2': 5.486369820277583, 'min_gain_to_split': 0.8239563641353919}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:57:08,663] Trial 97 finished with value: 2.5834314341912474 and parameters: {'learning_rate': 0.12707225648603998, 'num_leaves': 50, 'max_depth': 15, 'min_data_in_leaf': 35, 'feature_fraction': 0.6359990613677416, 'bagging_fraction': 0.8143474067492373, 'lambda_l1': 9.129503429877419, 'lambda_l2': 5.130849200021407, 'min_gain_to_split': 0.8685997244671793}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:57:43,368] Trial 98 finished with value: 2.640749697832368 and parameters: {'learning_rate': 0.13657272244787608, 'num_leaves': 35, 'max_depth': 14, 'min_data_in_leaf': 57, 'feature_fraction': 0.48893078787717204, 'bagging_fraction': 0.6204278336498478, 'lambda_l1': 8.547149245542846, 'lambda_l2': 4.1195133567455064, 'min_gain_to_split': 0.7417242254419374}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:58:16,983] Trial 99 finished with value: 2.5697884597522074 and parameters: {'learning_rate': 0.10045107686999591, 'num_leaves': 24, 'max_depth': 16, 'min_data_in_leaf': 20, 'feature_fraction': 0.6691868062714086, 'bagging_fraction': 0.7636474164296281, 'lambda_l1': 8.780574395443447, 'lambda_l2': 7.099129812578824, 'min_gain_to_split': 0.9662333610497092}. Best is trial 35 with value: 2.550152163300938.
+[I 2026-11-22 17:58:49,624] Trial 100 finished with value: 2.5938584712912114 and parameters: {'learning_rate': 0.14857065069254038, 'num_leaves': 27, 'max_depth': 16, 'min_data_in_leaf': 26, 'feature_fraction': 0.582393810706845, 'bagging_fraction': 0.7604625091736515, 'lambda_l1': 8.776919226387697, 'lambda_l2': 7.59043711269615, 'min_gain_to_split': 0.7714048915264579}. Best is trial 35 with value: 2.550152163300938.
+lgbm: chosen 2.6726  best 2.5502  trees 4998  folds x10, trials x1, 19 threads/fit -> /scratch/dongsha3/pm25/data/interim/model/params_lgbm.json
+end 2026-11-22T17:58:50-05:00
+
+scontrol show job 2902918
+JobId=2902918 JobName=tune-lgbm-100
+   UserId=dongsha3(3151850) GroupId=dongsha3(3151850) MCS_label=N/A
+   Priority=624046 Nice=0 Account=def-kuan QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:14:05 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2026-11-21T16:45:51 EligibleTime=2026-11-22T01:48:46
+   AccrueTime=2026-11-22T01:48:46
+   StartTime=2026-11-22T17:44:45 EndTime=2026-11-22T17:58:50 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-22T17:44:45 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=tri-login01:3656393
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri1104
+   BatchHost=tri1104
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/dongsha3/pm25/code/model/slurm/pm25_job.sh
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=tune-lgbm-100 --time=06:00:00 --dependency=afterok:2902917 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model lgbm --trials 100 --export=NONE --get-user-env --parsable --job-name=tune-lgbm-100 --time=06:00:00 --dependency=afterok:2902917 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model lgbm --trials 100
+   WorkDir=/scratch/dongsha3/pm25
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=tune-lgbm-100 --time=06:00:00 --dependency=afterok:2902917 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model lgbm --trials 100
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/dongsha3/pm25/logs/tune-lgbm-100-2902918.out
+   TresPerTask=cpu=192
+   MailUser=shaojie.dong@mail.utoronto.ca MailType=FAIL
+
+sacct -j 2902918
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2902918      tune-lgbm+   def-kuan   00:14:05                         00:00:00   00:00:00      0:0 
+2902918.bat+      batch   def-kuan   00:14:05                         00:00:00   00:00:00      0:0 
+2902918.ext+     extern   def-kuan   00:14:05                         00:00:00   00:00:00      0:0 
+

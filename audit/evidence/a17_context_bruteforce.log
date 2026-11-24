@@ -1,0 +1,15 @@
+                     size  sum
+col                           
+aod_last_obs          960  960
+aod_last_obs_age_d    960  960
+aod_nbr_100km_d0      960  960
+aod_nbr_100km_d0_n    960  960
+aod_nbr_25km_d0       960  960
+aod_nbr_25km_d0_n     960  960
+aod_nbr_50km_d0       960  960
+aod_nbr_50km_d0_n     960  960
+aod_nbr_50km_d1_3     960  960
+aod_nbr_50km_d1_3_n   960  960
+Empty DataFrame
+Columns: [y, m, cell_id, day, col, ref, got, ok]
+Index: []

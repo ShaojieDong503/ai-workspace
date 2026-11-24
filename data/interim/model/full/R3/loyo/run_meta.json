@@ -1,0 +1,28 @@
+{
+  "tag": "R3",
+  "dataset": "A",
+  "scheme": "loyo",
+  "model": "xgb",
+  "quick": false,
+  "config_hash": "662aa69046930e8d",
+  "features_hash": "51598c4296bea7fe",
+  "params_hash": "07ee797717a17378",
+  "n_features": 62,
+  "target_fingerprint": "166ea13817f37923d73ce9654cc18a01",
+  "folds": 14,
+  "rows_oof": 145315,
+  "folds_not_stopped": 7,
+  "cap": 5000,
+  "wall_seconds": 25.6,
+  "trial_workers": 1,
+  "fold_workers": 14,
+  "threads_per_fit": 13,
+  "folds_fitted_this_call": 14,
+  "versions": {
+    "lightgbm": "4.5.0",
+    "xgboost": "3.2.0",
+    "sklearn": "1.8.0",
+    "numpy": "2.4.2",
+    "pandas": "3.0.5"
+  }
+}

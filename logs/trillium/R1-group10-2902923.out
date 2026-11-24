@@ -1,0 +1,45 @@
+start 2026-11-22T17:59:57-05:00  host tri1237  job 2902923  name R1-group10
+cmd: python code/model/runs.py R1 --scheme group10
+OMP_NUM_THREADS=19  cpus=192
+R1 group10 done -> /scratch/dongsha3/pm25/data/interim/model/full/R1/group10
+end 2026-11-22T18:00:21-05:00
+
+scontrol show job 2902923
+JobId=2902923 JobName=R1-group10
+   UserId=dongsha3(3151850) GroupId=dongsha3(3151850) MCS_label=N/A
+   Priority=622866 Nice=0 Account=def-kuan QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:30 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2026-11-21T16:45:51 EligibleTime=2026-11-22T17:58:51
+   AccrueTime=2026-11-22T17:58:51
+   StartTime=2026-11-22T17:59:51 EndTime=2026-11-22T18:00:21 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-22T17:59:51 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=tri-login01:3656393
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri1237
+   BatchHost=tri1237
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/dongsha3/pm25/code/model/slurm/pm25_job.sh
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=R1-group10 --time=03:00:00 --dependency=afterok:2902918 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/runs.py R1 --scheme group10 --export=NONE --get-user-env --parsable --job-name=R1-group10 --time=03:00:00 --dependency=afterok:2902918 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/runs.py R1 --scheme group10
+   WorkDir=/scratch/dongsha3/pm25
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=R1-group10 --time=03:00:00 --dependency=afterok:2902918 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/runs.py R1 --scheme group10
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/dongsha3/pm25/logs/R1-group10-2902923.out
+   TresPerTask=cpu=192
+   MailUser=shaojie.dong@mail.utoronto.ca MailType=FAIL
+
+sacct -j 2902923
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2902923      R1-group10   def-kuan   00:00:31                         00:00:00   00:00:00      0:0 
+2902923.bat+      batch   def-kuan   00:00:31                         00:00:00   00:00:00      0:0 
+2902923.ext+     extern   def-kuan   00:00:31                         00:00:00   00:00:00      0:0 
+

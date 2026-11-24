@@ -1,0 +1,15 @@
+# code/model runtime, pinned to what the Alliance wheelhouse on Trillium provides
+# (checked 20 Nov 2026 with avail_wheels). Install with `pip install --no-index`.
+# Differences from the local Windows pins (data/interim/model/versions.txt):
+# numpy 2.4.6 -> 2.4.2, pandas 3.0.3 -> 3.0.5, pyarrow 24.0.0 -> 23.0.1,
+# scikit-learn 1.9.0 -> 1.8.0, lightgbm 4.6.0 -> 4.5.0. Nothing in Phase 2 ran locally.
+# pyarrow is a "dummy" wheel on the Alliance stack: load the matching `arrow` module
+# first (module load arrow/23.0.1), at install time and in every job script.
+numpy==2.4.2
+pandas==3.0.5
+pyarrow==23.0.1
+scipy==1.17.1
+scikit-learn==1.8.0
+lightgbm==4.5.0
+xgboost==3.2.0
+optuna==4.9.0

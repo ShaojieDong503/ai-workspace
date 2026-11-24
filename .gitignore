@@ -1,0 +1,40 @@
+# Allow-list: only code, docs, the audit, the training table and the model outputs.
+# Raw data, intermediate panels (data/interim/base, features, scratch), the prediction
+# table, CanOSSEM and local tooling stay off GitHub.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/code/
+!/docs/
+!/audit/
+!/PROMPT_build_ontario_panel.md
+
+!/logs/
+/logs/*
+!/logs/trillium/
+
+!/data/
+/data/*
+!/data/processed/
+/data/processed/*
+!/data/processed/README.md
+!/data/processed/grid/
+!/data/processed/target/
+/data/processed/target/*
+!/data/processed/target/target_table.parquet
+
+!/data/interim/
+/data/interim/*
+!/data/interim/model/
+/data/interim/model/quick/
+/data/interim/model/figures/episodes/*/quick/
+# local quick-pass leftovers (Nov 19); the full-run versions come from Trillium
+/data/interim/model/quick_run*.log
+/data/interim/model/results_dev_quick.md
+/data/interim/model/optuna/
+/data/interim/model/rf_grid/*quick*/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

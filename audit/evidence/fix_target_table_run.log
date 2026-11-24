@@ -1,0 +1,42 @@
+negative station-days dropped: 0 of 1,067,868
+rows: 1,042,511  cells: 351  model inputs: 63/63
+dates: 2010-01-01 .. 2024-12-31
+duplicate (cell_id, date): 0
+exit 0
+PASS  spine rows = 163,787 (got 163,787)
+PASS  cell_idx is 0..n-1 in order
+PASS  cell_id unique in the spine
+PASS  country and province are null together (water cells only)
+PASS  no NaN in the numeric spine columns
+PASS  water cells = 16,269 (got 16,269)
+PASS  cell centres match the lattice (max 0.00e+00 m)
+PASS  cell_id == row*1065 + col for every row
+PASS  merra index length (163787,)
+PASS  every cell maps into the MERRA raster
+PASS  4 MAIAC tiles discovered (got 4)
+PASS  maiac 0000000000_0000002816 index shape (1658, 1368) matches its window
+PASS  maiac 0000000000_0000002816 pixel count matches the manifest
+PASS  maiac 0000000000_0000005632 index shape (1658, 2117) matches its window
+PASS  maiac 0000000000_0000005632 pixel count matches the manifest
+PASS  maiac 0000002816_0000002816 index shape (357, 1368) matches its window
+PASS  maiac 0000002816_0000002816 pixel count matches the manifest
+PASS  maiac 0000002816_0000005632 index shape (357, 2117) matches its window
+PASS  maiac 0000002816_0000005632 pixel count matches the manifest
+PASS  stations in the spine = 388 (got 388)
+PASS  station_uid unique
+PASS  every station cell_idx exists in the spine
+PASS  station cell_id reproduced from its coordinates
+PASS  max station-to-centre distance 3.29 km (<= half a cell diagonal 3.54)
+PASS  station-days = 1,067,868 (got 1,067,868)
+PASS  (station_uid, date) unique
+PASS  every date inside 2010-2024
+PASS  every station-day cell is in the spine
+PASS  every row respects the 18-hour rule (min 18)
+PASS  no NaN targets
+PASS  no negative targets (negative hours are missing)
+PASS  all 388 stations have at least one day
+PASS  station-day cell_id agrees with stations.parquet
+PASS  30 sampled Ontario daily means reproduce from the hourly product (0 mismatches)
+
+0 failure(s)
+exit 0

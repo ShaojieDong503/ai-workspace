@@ -1,0 +1,6 @@
+raw rows 1318220 ; negative non-sentinel hourly values: 31637280 ; distinct: [np.float64(-33.0), np.float64(-21.0), np.float64(-11.0), np.float64(-3.0), np.float64(nan), np.float64(-25.0), np.float64(-24.0), np.float64(-19.0), np.float64(-17.0), np.float64(-16.0), np.float64(-15.0), np.float64(-14.0), np.float64(-13.0), np.float64(-12.0), np.float64(-10.0), np.float64(-9.0), np.float64(-8.0), np.float64(-7.0), np.float64(-6.0), np.float64(-5.0)]
+non-numeric hourly cells: 0
+stations with >1 cell across their coordinates: []
+NAPS stations with any coordinate in the spine: 111 {'ON': 59, 'QC': 49, 'MB': 3}
+duplicate station-local-days removed: 43083
+reference NAPS station-days: 411346 {'ON': 222369, 'QC': 176612, 'MB': 12365}

@@ -1,0 +1,12 @@
+['cell_id', 'row', 'col', 'x_3347', 'y_3347', 'lon', 'lat', 'in_square', 'intersects_square', 'country', 'province_state', 'postal', 'in_canossem', 'status']
+050311 row 761 col 813 cell 811278 in grid table: 1 [[False, 46.79347610473633, -71.35171508789062, 'Québec']]
+055702 row 760 col 816 cell 810216 in grid table: 0 
+grid table col range 400 827  lon max of in_square cells -66.99064
+spine cells with lon > -71.5 and lat 46-47.5: 75
+38.5 40 lon range -82.38 -73.59
+42 43 lon range -97.72 -72.69
+46.5 47 lon range -97.82 -71.33
+50 51 lon range -97.92 -69.71
+55 56 lon range -98.11 -67.15
+58.5 59.2 lon range -98.24 -79.85
+x_3347 range 5688409.0 7818335.302 y range 465465.99000000115 2549992.2780000004

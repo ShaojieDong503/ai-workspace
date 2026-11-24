@@ -1,0 +1,10 @@
+2011_06 rows 37471 dates {datetime.date(2011, 6, 20): 35927, datetime.date(2011, 6, 10): 1544} cells 37471
+   0000000000_0000002816 bands 150 days 30 missing days: []
+   0000000000_0000005632 bands 150 days 30 missing days: []
+   0000002816_0000002816 bands 150 days 30 missing days: []
+   0000002816_0000005632 bands 150 days 30 missing days: []
+2012_02 rows 2953 dates {datetime.date(2012, 2, 1): 2953} cells 2953
+   0000000000_0000002816 bands 145 days 29 missing days: []
+   0000000000_0000005632 bands 145 days 29 missing days: []
+   0000002816_0000002816 bands 145 days 29 missing days: []
+   0000002816_0000005632 bands 145 days 29 missing days: []

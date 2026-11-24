@@ -1,0 +1,21 @@
+{'both': 411346, 'left_only': 0, 'right_only': 0}
+value mismatches: 73  by prov: {'ON': 73}
+        station_uid        day   pm25_x      pm25_y   n  n_valid_hours
+181441  NAPS:060104 2023-06-07  170.625  170.619995  24             24
+200429  NAPS:060304 2023-06-06  129.625  129.619995  24             24
+262461  NAPS:060610 2023-06-25  275.125  275.119995  24             24
+195051  NAPS:060211 2023-06-28  136.875  136.880005  24             24
+177865  NAPS:060104 2013-07-02   41.625   41.619999  24             24
+189674  NAPS:060204 2023-06-08   39.625   39.619999  24             24
+181463  NAPS:060104 2023-07-01   35.875   35.880001  24             24
+186706  NAPS:060204 2015-03-10   38.125   38.119999  24             24
+189673  NAPS:060204 2023-06-07   60.375   60.380001  24             24
+189720  NAPS:060204 2023-07-25   36.875   36.880001  24             24
+n_valid_hours mismatches: 0
+max |diff| ON: 0.0050048828125  QC/MB: 2.0345052121228946e-05
+station-days with >=1 negative hour: 941  of which daily mean still >= 0: 905
+days lost if negative hours were missing (<18 left): 107
+shift in daily mean when negative hours are missing: mean 0.001  max 3.996  days changed by >0.5: 296
+Empty DataFrame
+Columns: [stn, day, pm25_x, n, n_neg, prov, n_nn, pm25_negmissing, station_uid, date, cell_id, pm25_y, n_valid_hours, n_poc, _merge]
+Index: []

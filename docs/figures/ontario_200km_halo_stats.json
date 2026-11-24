@@ -1,0 +1,17 @@
+{
+  "ontario_area_km2": 1077591.96,
+  "halo_area_km2": 1206104.08,
+  "union_area_km2": 2283696.03,
+  "bbox_w_km": 2032.25,
+  "bbox_h_km": 1985.46,
+  "bbox_area_km2": 4034941.22,
+  "equiv_square_side_km": 1511.19,
+  "southmost_lat": 39.87,
+  "southmost_lon": -82.68,
+  "northmost_lat": 58.66,
+  "halo_pct_of_ontario": 111.93,
+  "centroid": [
+    50.066999864889326,
+    -85.82887707098794
+  ]
+}

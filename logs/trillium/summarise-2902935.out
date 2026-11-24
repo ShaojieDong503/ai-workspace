@@ -1,0 +1,145 @@
+start 2026-11-22T18:20:11-05:00  host tri0316  job 2902935  name summarise
+cmd: python code/model/summarise.py
+OMP_NUM_THREADS=unset  cpus=192
+# Development results
+
+mode: full
+
+**Grouped 10-fold is the scheme the parameters were chosen on, so its numbers are selection-biased.** Leave-one-region-out and leave-one-year-out are the honest development estimates; the test sets have the final word.
+
+## group10 (tuning folds, selection-biased)
+
+```
+                   rmse     mae    bias     r2         n
+run group                                               
+R1  all           2.763   1.710  -0.038  0.707  145315.0
+    gt25         18.525   9.822  -7.310    NaN     945.0
+    gt50         49.540  30.309 -21.197    NaN     101.0
+    heavy_smoke  13.478   5.041  -0.442  0.597    1479.0
+    le25          2.332   1.657   0.009  0.682  144370.0
+    north         3.967   1.769  -0.833  0.482   18883.0
+R2  all           3.349   2.096   0.030  0.569  145315.0
+    gt25         22.562  13.827 -12.064    NaN     945.0
+    gt50         57.474  37.035 -32.844    NaN     101.0
+    heavy_smoke  15.549   6.194  -0.134  0.463    1479.0
+    le25          2.821   2.020   0.109  0.535  144370.0
+    north         4.693   2.260   0.685  0.275   18883.0
+R3  all           2.770   1.728  -0.051  0.705  145315.0
+    gt25         18.289   9.814  -7.455    NaN     945.0
+    gt50         48.470  29.299 -21.751    NaN     101.0
+    heavy_smoke  13.190   5.086  -0.503  0.614    1479.0
+    le25          2.352   1.675  -0.002  0.677  144370.0
+    north         3.965   1.831  -0.856  0.483   18883.0
+R4  all           2.956   1.757   0.041  0.664  145315.0
+    gt25         21.869  12.927 -11.842    NaN     945.0
+    gt50         57.765  40.115 -36.683    NaN     101.0
+    heavy_smoke  14.585   5.388  -0.109  0.527    1479.0
+    le25          2.381   1.683   0.119  0.669  144370.0
+    north         4.176   1.844   0.162  0.426   18883.0
+```
+
+## loro
+
+```
+                   rmse     mae    bias     r2         n
+run group                                               
+R1  all           3.092   1.905   0.077  0.633  145315.0
+    gt25         20.612  11.400  -8.895    NaN     945.0
+    gt50         55.188  36.930 -28.303    NaN     101.0
+    heavy_smoke  14.390   5.886  -0.317  0.540    1479.0
+    le25          2.616   1.842   0.136  0.600  144370.0
+    north         3.998   1.789  -0.905  0.474   18883.0
+R2  all           3.561   2.218  -0.025  0.513  145315.0
+    gt25         24.642  15.535 -13.908    NaN     945.0
+    gt50         63.345  43.742 -39.234    NaN     101.0
+    heavy_smoke  16.193   7.012  -0.187  0.418    1479.0
+    le25          2.965   2.131   0.066  0.487  144370.0
+    north         4.601   2.260   0.658  0.304   18883.0
+R3  all           3.101   1.933   0.065  0.631  145315.0
+    gt25         20.430  11.379  -9.329    NaN     945.0
+    gt50         54.476  36.194 -30.244    NaN     101.0
+    heavy_smoke  14.166   5.791  -0.460  0.554    1479.0
+    le25          2.636   1.871   0.127  0.594  144370.0
+    north         4.009   1.837  -0.903  0.471   18883.0
+R4  all           3.219   1.927   0.040  0.602  145315.0
+    gt25         23.960  14.605 -13.805    NaN     945.0
+    gt50         63.113  45.069 -42.782    NaN     101.0
+    heavy_smoke  15.525   6.039  -0.150  0.465    1479.0
+    le25          2.584   1.844   0.131  0.610  144370.0
+    north         4.349   1.905   0.198  0.378   18883.0
+```
+
+## loyo
+
+```
+                   rmse     mae    bias     r2         n
+run group                                               
+R1  all           3.864   2.185  -0.071  0.426  145315.0
+    gt25         31.387  21.348 -20.479    NaN     945.0
+    gt50         81.948  67.863 -67.227    NaN     101.0
+    heavy_smoke  21.146   9.191  -3.045  0.007    1479.0
+    le25          2.930   2.060   0.062  0.499  144370.0
+    north         4.753   1.855  -0.395  0.257   18883.0
+R2  all           4.464   2.590  -0.128  0.234  145315.0
+    gt25         34.533  25.281 -24.103    NaN     945.0
+    gt50         86.762  73.402 -72.080    NaN     101.0
+    heavy_smoke  23.062  11.281  -1.805 -0.181    1479.0
+    le25          3.500   2.442   0.029  0.284  144370.0
+    north         5.428   2.393   0.579  0.031   18883.0
+R3  all           3.917   2.235  -0.073  0.411  145315.0
+    gt25         31.570  21.682 -20.750    NaN     945.0
+    gt50         81.998  67.909 -67.679    NaN     101.0
+    heavy_smoke  21.242   9.347  -2.972 -0.002    1479.0
+    le25          2.986   2.108   0.063  0.479  144370.0
+    north         4.781   1.905  -0.382  0.248   18883.0
+R4  all           4.129   2.367  -0.134  0.345  145315.0
+    gt25         33.568  24.499 -24.354    NaN     945.0
+    gt50         84.830  71.456 -71.310    NaN     101.0
+    heavy_smoke  21.458   9.508  -2.854 -0.023    1479.0
+    le25          3.128   2.222   0.025  0.428  144370.0
+    north         4.930   2.037   0.188  0.200   18883.0
+```
+
+
+wrote /scratch/dongsha3/pm25/data/interim/model/results_dev.md
+end 2026-11-22T18:20:16-05:00
+
+scontrol show job 2902935
+JobId=2902935 JobName=summarise
+   UserId=dongsha3(3151850) GroupId=dongsha3(3151850) MCS_label=N/A
+   Priority=622866 Nice=0 Account=def-kuan QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:12 TimeLimit=00:15:00 TimeMin=N/A
+   SubmitTime=2026-11-21T16:45:53 EligibleTime=2026-11-22T18:20:00
+   AccrueTime=2026-11-22T18:20:00
+   StartTime=2026-11-22T18:20:04 EndTime=2026-11-22T18:20:16 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-22T18:20:04 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=tri-login01:3656393
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri0316
+   BatchHost=tri0316
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/dongsha3/pm25/code/model/slurm/pm25_job.sh
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=summarise --time=00:30:00 --dependency=afterok:2902923:2902924:2902925:2902926:2902927:2902928:2902929:2902930:2902931:2902932:2902933:2902934 code/model/slurm/pm25_job.sh python code/model/summarise.py --export=NONE --get-user-env --parsable --job-name=summarise --time=00:30:00 --dependency=afterok:2902923:2902924:2902925:2902926:2902927:2902928:2902929:2902930:2902931:2902932:2902933:2902934 code/model/slurm/pm25_job.sh python code/model/summarise.py
+   WorkDir=/scratch/dongsha3/pm25
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=summarise --time=00:30:00 --dependency=afterok:2902923:2902924:2902925:2902926:2902927:2902928:2902929:2902930:2902931:2902932:2902933:2902934 code/model/slurm/pm25_job.sh python code/model/summarise.py
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/dongsha3/pm25/logs/summarise-2902935.out
+   TresPerTask=cpu=192
+   MailUser=shaojie.dong@mail.utoronto.ca MailType=END,FAIL
+
+sacct -j 2902935
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2902935       summarise   def-kuan   00:00:12                         00:00:00   00:00:00      0:0 
+2902935.bat+      batch   def-kuan   00:00:12                         00:00:00   00:00:00      0:0 
+2902935.ext+     extern   def-kuan   00:00:12                         00:00:00   00:00:00      0:0 
+

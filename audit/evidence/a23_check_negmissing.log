@@ -1,0 +1,19 @@
+rows 1067868  negative pm25: 0  min hours: 18  dup keys: 0
+
+AQS: pipeline 656,629  reference 656,629  merge {'both': 656629, 'left_only': 0, 'right_only': 0}
+  |diff| max 7.12e-06  >1e-3: 0
+  n_valid_hours mismatches: 0  n_poc mismatches: 0
+  31-Dec rows: 1,896  max |diff| 1.78e-06
+
+NAPS: pipeline 411,239  reference 411,239  merge {'both': 411239, 'left_only': 0, 'right_only': 0}
+  |diff| max 2.03e-05  >1e-3: 0
+  n_valid_hours mismatches: 0  n_poc mismatches: 0
+  31-Dec rows: 1,133  max |diff| 1.66e-06
+
+before -> after station-days by network
+             before  before_nonneg   after
+station_uid                               
+AQS          667759         665127  656629
+NAPS         411346         411310  411239
+common rows 1,067,868; mean shift +0.0438; >0.5 shift 34,800; new rows not in old: 0
+mean pm25 before (nonneg) 7.799  after 7.888

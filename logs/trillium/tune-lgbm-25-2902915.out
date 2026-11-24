@@ -1,0 +1,58 @@
+start 2026-11-22T01:03:18-05:00  host tri0008  job 2902915  name tune-lgbm-25
+cmd: python code/model/tune.py --model lgbm --trials 25
+OMP_NUM_THREADS=19  cpus=192
+[I 2026-11-22 01:03:23,751] Using an existing study with name 'lgbm_A_full_662aa69046930e8d_6d5517e185fa06a5' instead of creating a new one.
+marked 1 interrupted trial(s) as FAIL: [13]
+[I 2026-11-22 01:04:11,418] Trial 14 finished with value: 2.5824821767682997 and parameters: {'learning_rate': 0.06151234245119474, 'num_leaves': 159, 'max_depth': 14, 'min_data_in_leaf': 59, 'feature_fraction': 0.896199212136337, 'bagging_fraction': 0.7317950980984348, 'lambda_l1': 6.590907270100807, 'lambda_l2': 4.058149674866027, 'min_gain_to_split': 0.7145864119048047}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:05:33,791] Trial 15 finished with value: 2.6836928978576795 and parameters: {'learning_rate': 0.06007921812280763, 'num_leaves': 207, 'max_depth': 14, 'min_data_in_leaf': 216, 'feature_fraction': 0.862179711146234, 'bagging_fraction': 0.6477662988818438, 'lambda_l1': 7.306357059339343, 'lambda_l2': 4.706585802753074, 'min_gain_to_split': 0.6992257520576}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:06:37,658] Trial 16 finished with value: 2.6080294647903934 and parameters: {'learning_rate': 0.07346522332680022, 'num_leaves': 130, 'max_depth': 14, 'min_data_in_leaf': 68, 'feature_fraction': 0.8665682763123069, 'bagging_fraction': 0.6643575022913395, 'lambda_l1': 6.378100896658173, 'lambda_l2': 2.5302358599055346, 'min_gain_to_split': 0.7392519817715955}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:07:30,246] Trial 17 finished with value: 2.630491652075377 and parameters: {'learning_rate': 0.07250318717761697, 'num_leaves': 128, 'max_depth': 9, 'min_data_in_leaf': 81, 'feature_fraction': 0.866794260925813, 'bagging_fraction': 0.6480237775544135, 'lambda_l1': 6.112775245262312, 'lambda_l2': 2.654676614696349, 'min_gain_to_split': 0.6858533866559791}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:08:39,436] Trial 18 finished with value: 2.6677749620360407 and parameters: {'learning_rate': 0.07610103343261974, 'num_leaves': 206, 'max_depth': 14, 'min_data_in_leaf': 255, 'feature_fraction': 0.7044954129090223, 'bagging_fraction': 0.8058738488262142, 'lambda_l1': 6.543029327082979, 'lambda_l2': 6.720565959726162, 'min_gain_to_split': 0.42274155303007593}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:09:20,557] Trial 19 finished with value: 2.6103532304904484 and parameters: {'learning_rate': 0.07361560968726495, 'num_leaves': 136, 'max_depth': 14, 'min_data_in_leaf': 75, 'feature_fraction': 0.8702491252174077, 'bagging_fraction': 0.6510686970404117, 'lambda_l1': 4.751448693571332, 'lambda_l2': 9.919673904637698, 'min_gain_to_split': 0.5565180686774084}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:10:14,686] Trial 20 finished with value: 2.710912095761808 and parameters: {'learning_rate': 0.07227694176619275, 'num_leaves': 80, 'max_depth': 9, 'min_data_in_leaf': 249, 'feature_fraction': 0.6959857348599227, 'bagging_fraction': 0.7990280180751731, 'lambda_l1': 8.494047464062131, 'lambda_l2': 4.460249390130632, 'min_gain_to_split': 0.7681970673722484}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:11:11,947] Trial 21 finished with value: 2.6372461218954233 and parameters: {'learning_rate': 0.060742949142418845, 'num_leaves': 244, 'max_depth': 13, 'min_data_in_leaf': 80, 'feature_fraction': 0.81957470903194, 'bagging_fraction': 0.5121102302723326, 'lambda_l1': 6.8261469543626525, 'lambda_l2': 2.93275986534023, 'min_gain_to_split': 0.3789932730643367}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:12:13,410] Trial 22 finished with value: 2.617356057330647 and parameters: {'learning_rate': 0.07603316752562041, 'num_leaves': 138, 'max_depth': 14, 'min_data_in_leaf': 74, 'feature_fraction': 0.8782329111946122, 'bagging_fraction': 0.6466045854492691, 'lambda_l1': 5.026421831951203, 'lambda_l2': 9.83549650992423, 'min_gain_to_split': 0.5754571977265527}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:13:15,952] Trial 23 finished with value: 2.615170368298492 and parameters: {'learning_rate': 0.08412526572195296, 'num_leaves': 185, 'max_depth': 15, 'min_data_in_leaf': 66, 'feature_fraction': 0.9096739171781764, 'bagging_fraction': 0.6073485428455995, 'lambda_l1': 5.035263562549008, 'lambda_l2': 7.8517221431977875, 'min_gain_to_split': 0.5142308084556603}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:14:12,383] Trial 24 finished with value: 2.6753684540735945 and parameters: {'learning_rate': 0.06902863007293773, 'num_leaves': 142, 'max_depth': 13, 'min_data_in_leaf': 182, 'feature_fraction': 0.8370703862184932, 'bagging_fraction': 0.68637234897534, 'lambda_l1': 3.689832260338637, 'lambda_l2': 9.600563746361418, 'min_gain_to_split': 0.7366623221954526}. Best is trial 14 with value: 2.5824821767682997.
+[I 2026-11-22 01:14:41,010] Trial 25 finished with value: 2.602052909103566 and parameters: {'learning_rate': 0.08490197195430735, 'num_leaves': 111, 'max_depth': 15, 'min_data_in_leaf': 61, 'feature_fraction': 0.9206958583340389, 'bagging_fraction': 0.6898818224325695, 'lambda_l1': 4.675229715211558, 'lambda_l2': 2.026313919580034, 'min_gain_to_split': 0.6293352329390213}. Best is trial 14 with value: 2.5824821767682997.
+lgbm: chosen 2.6384  best 2.5825  trees 1662  folds x10, trials x1, 19 threads/fit -> /scratch/dongsha3/pm25/data/interim/model/params_lgbm.json
+end 2026-11-22T01:14:41-05:00
+
+scontrol show job 2902915
+JobId=2902915 JobName=tune-lgbm-25
+   UserId=dongsha3(3151850) GroupId=dongsha3(3151850) MCS_label=N/A
+   Priority=608888 Nice=0 Account=def-kuan QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:11:29 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2026-11-21T16:45:51 EligibleTime=2026-11-22T01:01:21
+   AccrueTime=2026-11-22T01:01:21
+   StartTime=2026-11-22T01:03:12 EndTime=2026-11-22T01:14:41 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-22T01:03:12 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=tri-login01:3656393
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri0008
+   BatchHost=tri0008
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/dongsha3/pm25/code/model/slurm/pm25_job.sh
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=tune-lgbm-25 --time=06:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model lgbm --trials 25 --export=NONE --get-user-env --parsable --job-name=tune-lgbm-25 --time=06:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model lgbm --trials 25
+   WorkDir=/scratch/dongsha3/pm25
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=tune-lgbm-25 --time=06:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model lgbm --trials 25
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/dongsha3/pm25/logs/tune-lgbm-25-2902915.out
+   TresPerTask=cpu=192
+
+sacct -j 2902915
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2902915      tune-lgbm+   def-kuan   00:11:29                         00:00:00   00:00:00      0:0 
+2902915.bat+      batch   def-kuan   00:11:29                         00:00:00   00:00:00      0:0 
+2902915.ext+     extern   def-kuan   00:11:29                         00:00:00   00:00:00      0:0 
+

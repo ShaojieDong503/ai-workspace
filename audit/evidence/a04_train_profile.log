@@ -1,0 +1,93 @@
+rows 1050847 cols 81 cells 351
+dup keys 0 sorted True
+NaN per non-allowed col: {}
+pm25 describe:
+ count     1050847.000
+mean            7.766
+std             5.954
+min             0.000
+0.1%            0.136
+1%              0.892
+50%             6.522
+99%            26.083
+99.9%          51.944
+99.99%        150.371
+max           581.333
+pm25 == 0 rows: 248  <0: 0
+n_stations: {1: 1029830, 2: 18293, 3: 875, 4: 1849}
+n_hours_min: {18: 2541, 19: 3282, 20: 5045, 21: 9253, 22: 22135, 23: 46508, 24: 962083}
+cell-days from station_day (pm25>=0): 1050847  training rows: 1050847  diff: 0
+negative station-days by network: {'AQS': 2632, 'NAPS': 36}  min: -8.666666984558105
+top station-days:
+     station_uid          name       date       pm25  n_valid_hours
+    NAPS:055101    Senneterre 2023-06-25 581.333313             24
+    NAPS:055101    Senneterre 2023-06-24 543.333313             24
+    NAPS:053201       La Dore 2023-06-25 473.250000             24
+    NAPS:050504      Saguenay 2023-06-25 464.583344             24
+    NAPS:062001     North Bay 2023-06-25 404.709991             24
+    NAPS:050604 Rouyn-Noranda 2023-06-26 340.041656             24
+    NAPS:070501      Thompson 2017-03-08 295.458344             24
+    NAPS:053201       La Dore 2023-06-24 293.041656             24
+    NAPS:060610       Sudbury 2023-06-25 275.119995             24
+    NAPS:055101    Senneterre 2023-06-26 267.583344             24
+AQS:42-095-0025  Pennsylvania 2023-06-07 264.133331             24
+    NAPS:052001      Charette 2023-06-25 257.833344             24
+AQS:42-077-0004  Pennsylvania 2023-06-07 246.695831             24
+AQS:42-071-0012  Pennsylvania 2023-06-07 245.158340             24
+AQS:42-101-0075  Pennsylvania 2023-06-07 244.029160             24
+multi-station cell-days: 21017  spread>50: 0  spread>20: 38
+                    size        min        max     spread
+cell_id date                                             
+962346  2019-04-28     4   4.250000  50.166668  45.916668
+        2024-07-04     4   9.170000  50.633335  41.463333
+        2019-06-26     4   8.960000  45.243477  36.283478
+        2019-07-19     4  11.225000  47.216667  35.991669
+        2019-07-13     3  14.512500  50.354168  35.841667
+927240  2014-02-12     2  21.959999  57.119999  35.160000
+962346  2011-09-01     2   0.000000  32.040001  32.040001
+927240  2014-02-14     2   1.710000  33.000000  31.290001
+cells where province_state and on_region disagree:
+  cell_id province_state  on_region  dist_ontario_km
+  863406        Ontario          0         4.745209
+  944250       Michigan          4         0.000000
+  945315        Ontario          0         6.226422
+training aod055 observed share by year: {2010: 0.253, 2011: 0.229, 2012: 0.273, 2013: 0.204, 2014: 0.174, 2015: 0.221, 2016: 0.22, 2017: 0.214, 2018: 0.192, 2019: 0.187, 2020: 0.233, 2021: 0.226, 2022: 0.226, 2023: 0.238, 2024: 0.264}
+training rows south of 41N (maiac_covered=0): 282530
+stations per year by network:
+ net   AQS  NAPS
+date           
+2010   54    78
+2011   67    82
+2012   65    81
+2013   75    81
+2014   92    80
+2015   98    78
+2016  118    82
+2017  140    80
+2018  167    78
+2019  172    80
+2020  174    79
+2021  191    79
+2022  197    78
+2023  222    77
+2024  239    70
+annual mean pm25 by network:
+ net     AQS  NAPS
+date             
+2010  12.19  6.82
+2011  10.85  7.04
+2012  10.15  6.89
+2013   9.60  7.79
+2014   9.39  7.63
+2015   9.13  7.48
+2016   7.88  6.38
+2017   7.81  6.51
+2018   7.87  6.75
+2019   7.66  6.44
+2020   7.19  6.32
+2021   8.44  7.02
+2022   7.40  6.55
+2023   9.66  8.82
+2024   6.94  6.31
+min/max monthly training rows: 2871 8741  months: 180
+calendar mismatches: 0

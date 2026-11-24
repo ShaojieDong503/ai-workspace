@@ -1,0 +1,13 @@
+thesis ids not among current ON stations: []
+cities with >1 thesis region: {}
+ON stations whose cell region != expected:
+ station_uid    name  cell_id  exp  on_region
+NAPS:060211 Windsor   962346  4.0          0
+thesis stations whose stations.parquet name differs from thesis city: []
+non-ON monitors in on_region>0 cells: []
+monitored cells where dist differs from brute force (spine-Ontario):
+  cell_id province_state  dist_ontario_km    d_ref
+  863406        Ontario         4.745209 0.000000
+  944250       Michigan         0.000000 4.998864
+  945315        Ontario         6.226422 0.000000
+Ontario-region row/cell counts: {0: 842695, 1: 27147, 2: 43101, 3: 35523, 4: 38913, 5: 37017, 6: 26451}

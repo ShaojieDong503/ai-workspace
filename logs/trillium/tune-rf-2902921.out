@@ -1,0 +1,56 @@
+start 2026-11-22T01:42:15-05:00  host tri1167  job 2902921  name tune-rf
+cmd: python code/model/tune.py --model rf
+OMP_NUM_THREADS=19  cpus=192
+  rf {'max_features': 'sqrt', 'min_samples_leaf': 1} -> 2.7618
+  rf {'max_features': 'sqrt', 'min_samples_leaf': 2} -> 2.8009
+  rf {'max_features': 'sqrt', 'min_samples_leaf': 5} -> 2.9513
+  rf {'max_features': 'sqrt', 'min_samples_leaf': 10} -> 3.1406
+  rf {'max_features': 0.3, 'min_samples_leaf': 1} -> 2.7524
+  rf {'max_features': 0.3, 'min_samples_leaf': 2} -> 2.7451
+  rf {'max_features': 0.3, 'min_samples_leaf': 5} -> 2.8494
+  rf {'max_features': 0.3, 'min_samples_leaf': 10} -> 3.0030
+  rf {'max_features': 0.5, 'min_samples_leaf': 1} -> 2.7592
+  rf {'max_features': 0.5, 'min_samples_leaf': 2} -> 2.7409
+  rf {'max_features': 0.5, 'min_samples_leaf': 5} -> 2.8169
+  rf {'max_features': 0.5, 'min_samples_leaf': 10} -> 2.9618
+rf: chosen 2.8494  best 2.7409  trees 300  folds x10, trials x1, 19 threads/fit -> /scratch/dongsha3/pm25/data/interim/model/params_rf.json
+end 2026-11-22T01:47:20-05:00
+
+scontrol show job 2902921
+JobId=2902921 JobName=tune-rf
+   UserId=dongsha3(3151850) GroupId=dongsha3(3151850) MCS_label=N/A
+   Priority=608935 Nice=0 Account=def-kuan QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:05:11 TimeLimit=02:00:00 TimeMin=N/A
+   SubmitTime=2026-11-21T16:45:51 EligibleTime=2026-11-22T01:01:21
+   AccrueTime=2026-11-22T01:01:21
+   StartTime=2026-11-22T01:42:09 EndTime=2026-11-22T01:47:20 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-22T01:42:09 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=tri-login01:3656393
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri1167
+   BatchHost=tri1167
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/dongsha3/pm25/code/model/slurm/pm25_job.sh
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=tune-rf --time=08:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model rf --export=NONE --get-user-env --parsable --job-name=tune-rf --time=08:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model rf
+   WorkDir=/scratch/dongsha3/pm25
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=tune-rf --time=08:00:00 --export=ALL,OMP_NUM_THREADS=19 code/model/slurm/pm25_job.sh python code/model/tune.py --model rf
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/dongsha3/pm25/logs/tune-rf-2902921.out
+   TresPerTask=cpu=192
+
+sacct -j 2902921
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2902921         tune-rf   def-kuan   00:05:11                         00:00:00   00:00:00      0:0 
+2902921.bat+      batch   def-kuan   00:05:11                         00:00:00   00:00:00      0:0 
+2902921.ext+     extern   def-kuan   00:05:11                         00:00:00   00:00:00      0:0 
+

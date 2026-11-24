@@ -1,0 +1,12 @@
+development rows available: 145,315
+roles: {'calibration': 6, 'development': 36, 'spatial_test': 6}
+group10  folds 10  scored 145,315  pairwise overlaps 0  duplicates 0  missing 0  extra 0  OK
+loro     folds  6  scored 145,315  pairwise overlaps 0  duplicates 0  missing 0  extra 0  OK
+loyo     folds 14  scored 145,315  pairwise overlaps 0  duplicates 0  missing 0  extra 0  OK
+
+breakages through the real functions (each must raise):
+  held-out list containing a test cell: raised -> held-out list contains non-development cells: [918734]
+  scoring the test year: raised -> scoring years outside 2010-2023: [2024]
+  a calibration cell as the held-out list: raised -> held-out list contains non-development cells: [918737]
+
+PASS  scheme failures 0, breakages not caught 0

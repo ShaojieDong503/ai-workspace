@@ -1,0 +1,15 @@
+﻿# Runtime for code/panel on the local machine.
+# The system interpreter (C:\Python314\python.exe) already provides the first
+# block; the rest is what had to be added. Pin after install with:
+#   python -m pip freeze > code/panel/requirements.lock.txt
+numpy==2.4.6
+pandas==3.0.3
+pyarrow==24.0.0
+rasterio==1.5.0
+shapely==2.1.2
+pyproj==3.7.2
+scipy==1.17.1
+scikit-learn==1.9.0
+lightgbm>=4.3
+pyogrio>=0.10
+psutil>=6.0

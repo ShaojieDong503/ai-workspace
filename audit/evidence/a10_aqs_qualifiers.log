@@ -1,0 +1,6 @@
+2016 rows 909473 null measurement 0
+ qualifier on non-null values: {'1': 4145, '2': 3367, 'VB': 1316, 'IF': 317, 'IH': 77, 'IL': 28, 'RM': 25, 'RF': 24, 'IM': 21, 'RT': 19}
+ negative values: 32901  min -10.0
+2023 rows 2631924 null measurement 0
+ qualifier on non-null values: {'IF': 164374, '6': 71570, 'IT': 37861, 'J': 26714, '1': 19259, 'QX': 14165, '2': 10963, 'RF': 8263, 'SX': 8242, '3': 7107, '1V': 2754, 'IH': 689, 'IG': 408, 'IM': 379, '5': 205, 'RH': 120, 'RT': 65, 'NS': 36, 'IK': 26, 'IP': 10, 'IL': 4, 'V': 1}
+ negative values: 16119  min -10.0

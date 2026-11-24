@@ -1,0 +1,31 @@
+2012 4 done
+2016 11 done
+2018 9 done
+2023 6 done
+2024 12 done
+                      size  sum
+col                            
+fire_count_100km       200  200
+fire_count_250km       200  200
+fire_count_25km        200  200
+fire_count_500km       200  200
+fire_count_50km        200  200
+fire_dist_nearest_km   200  200
+fire_frp_sum_100km     200  200
+fire_frp_sum_250km     200  200
+fire_frp_sum_25km      200  200
+fire_frp_sum_500km     200  200
+fire_frp_sum_50km      200  200
+hms_density_max        198  198
+hms_n_polygons         200  200
+merra_bcsmass          200  200
+merra_dusmass25        200  200
+merra_pblh             200  200
+merra_qlml             200  200
+merra_speedmax         200  200
+merra_tlml             200  200
+merra_totexttau        200  200
+merra_u850             200  200
+Empty DataFrame
+Columns: [col, y, m, cell_id, day, ref, got, ok]
+Index: []
